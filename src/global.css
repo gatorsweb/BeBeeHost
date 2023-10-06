@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    body{
+        @apply font-roboto
+    }
+    h1{
+        @apply text-[45px] font-[700] leading-[55px]
+    }
+    p{
+        @apply leading-6 text-paragraph
+    }
+    
+}
+
+@layer components{
+    .section-margin{
+        @apply my-[125px]
+    }
+    .section-heading{
+        @apply flex flex-col items-center text-center mb-10
+    }
+    .sub-heading{
+        @apply text-[22px] text-paragraph max-w-[700px] leading-8
+    }
+    .header-top{
+        @apply flex justify-between
+    }
+    .header-top ul{
+        @apply text-[17px] text-[#5E636E] flex space-x-4
+    }
+    .header-top ul li{
+        @apply flex items-center 
+    }
+    .main__nav ul{
+        @apply flex space-x-8 text-[17px]  text-[#17191C] font-[400]
+    }
+    .register__btn{
+        @apply h-[44px] w-[86px] border border-[#D9D9D9] rounded-sm text-[14px]
+    }
+    .login__btn{
+        @apply h-[44px] w-[69px] bg-primary rounded-sm text-[14px] text-[white]
+    }
+    .hero-heading{
+        @apply leading-[65px] text-[55px] font-[900]
+    }
+    .hero-list{
+        @apply md:flex text-[20px] md:space-x-12 font-[600] ml-5
+    }
+    .hero-list ul li{
+        @apply flex items-center leading-10
+    }
+    .hero-list ul li span{
+        @apply text-[#056e08] mr-2
+    }
+    .view-plans-btn{
+        @apply bg-[black] bg-opacity-75 h-[53px] w-[236px] rounded-sm text-[18px] text-[white]
+    }
+    .others-plans-btn{
+        @apply h-[53px] w-[168px] border border-[black] border-opacity-75 rounded-sm text-[18px] text-[black]
+    }
+    .price-box{
+        @apply bg-[white] shadow-2xl rounded-md shadow-primary
+    }
+    .pricelist ul li{
+        @apply leading-10 flex items-center
+    }
+    .pricelist-icon{
+        @apply mr-2 text-[#00DC09]
+    }
+    .order-btn{
+        @apply w-full py-3 rounded-sm text-[24px] text-[white] bg-gradient-to-r from-[#f97316] to-[#facc15]
+    }
+    .gurantee-btn{
+        @apply py-3 px-6 rounded-sm text-[24px] text-[white] bg-gradient-to-r from-[#f97316] to-[#facc15] shadow-lg
+    }
+    .feature-box{
+        @apply text-[white] space-y-5
+    }
+    .feature-box h3{
+        @apply text-[28px] font-[600] mb-2
+    }
+    .feature-box p{
+        @apply text-[16px]
+    }
+    .featurebox-icon-box{
+        @apply h-[80px] w-[80px]  bg-[white] flex items-center justify-center rounded-md
+    }
+    .featurebox-icon{
+        @apply text-[60px]
+    }
+    .why-box {
+        @apply my-2
+    }
+    .why-box h3{
+        @apply text-[24px] font-[600] mb-2 text-secondary
+    }
+    .why-box p{
+        @apply text-paragraph
+    }
+    .why-img{
+        @apply h-[75px] w-[75px] bg-[white] flex justify-center items-center rounded-md shadow-lg shadow-primary mb-5
+    }
+  
+    .toggle-heading{
+        @apply flex 
+    }
+    .toggle-heading h4{
+        @apply text-[20px]
+    }
+    .toggle-heading{
+        @apply  bg-[white] cursor-pointer  rounded-md justify-between items-center  p-4 my-4 drop-shadow-md
+    }
+    /* help */
+    .help-box {
+        @apply bg-[black] bg-opacity-75 rounded-md p-6 
+    }
+    .help-box h4{
+        @apply text-[30px] font-[700] text-[white]
+    }
+
+    .help-box p{
+        @apply text-[24px] leading-8 text-[white]
+    }
+    .help-btn{
+        @apply flex items-center text-[18px] mt-6 text-primary
+    }
+    .help-box-icon{
+        @apply text-[55px] text-[#facc15]
+    }
+    .page-title-btn{
+        @apply h-[53px] w-[168px] border border-[black] border-opacity-75 rounded-sm text-[18px] text-[black] flex justify-center items-center
+    }
+    .hosting-feature-box{
+        @apply bg-[white] p-6 rounded-md shadow-xl
+    }
+    .hosting-feature-box h3{
+        @apply text-[24px] font-[700] mb-3
+    }
+    .hosting-feature-box p{
+        @apply text-paragraph
+    }
+}
+
