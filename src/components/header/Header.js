@@ -27,7 +27,7 @@ export default function Header() {
                   <div className='main__nav'>
                       <ul>
                         <li><Link to={"/hosting"}>Web Hosting</Link> </li>
-                        <li><Link to={"/"}>Web Registration</Link> </li>
+                        <li><Link to={"/domain"}>Domain Registration</Link> </li>
                         <li><Link to={"/"}>Website Security</Link> </li>
                         <li><Link to={"/"}>About Us</Link> </li>
                       </ul>
