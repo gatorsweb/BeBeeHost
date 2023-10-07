@@ -1,5 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {IoMdMailOpen} from 'react-icons/io'
+import { LuPhoneCall } from 'react-icons/lu'
+import { FiHelpCircle, FiUser } from 'react-icons/fi'
+import { BiHomeCircle } from 'react-icons/bi'
 
 export default function Header() {
   return (
@@ -7,12 +11,12 @@ export default function Header() {
             <div className='header-top h-[37px] border-b border-[#D9D9D9]'>
               <div className='container  flex items-center justify-between'>
               <ul>
-                     <li> <span className='mr-2'> <img src="/images/email.svg" alt="logo" /> </span> <Link to={"/"}>sales@bebeeshost.com</Link> </li>
-                     <li> <span className='mr-2'> <img src="/images/call.svg" alt="logo" /> </span> <Link to={"/"}>+91 8276895715</Link> </li>
+                     <li> <span className='top-nav-icon'> <IoMdMailOpen/>  </span> <Link to={"/"}>sales@bebeeshost.com</Link> </li>
+                     <li> <span className='top-nav-icon'> <LuPhoneCall/> </span> <Link to={"/"}>+91 8276895715</Link> </li>
                 </ul>
                 <ul>
-                     <li> <span className='mr-2'> <img src="/images/question.svg" alt="logo" /> </span> <Link to={"/"}>Knowledgebase</Link> </li>
-                     <li> <span className='mr-2'> <img src="/images/user.svg" alt="logo" /> </span> <Link to={"/"}>Client Area</Link> </li>
+                     <li> <span className='top-nav-icon'> <FiHelpCircle/> </span> <Link to={"/"}>Knowledgebase</Link> </li>
+                     <li> <span className='top-nav-icon'> <FiUser/> </span> <Link to={"/"}>Client Area</Link> </li>
                 </ul>
 
               </div>
@@ -26,10 +30,13 @@ export default function Header() {
                   </div>
                   <div className='main__nav'>
                       <ul>
+                        <li className='flex items-center text-[22px] cursor-pointer'>
+                          <Link to={"/"}><BiHomeCircle/></Link>
+                          
+                        </li>
                         <li><Link to={"/hosting"}>Web Hosting</Link> </li>
                         <li><Link to={"/domain"}>Domain Registration</Link> </li>
                         <li><Link to={"/"}>Website Security</Link> </li>
-                        <li><Link to={"/"}>About Us</Link> </li>
                       </ul>
                   </div>
                   <div className='button__group space-x-3'>

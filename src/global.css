@@ -29,20 +29,26 @@
     .header-top{
         @apply flex justify-between
     }
+    .top-nav-icon{
+        @apply text-primary mr-2
+    }
     .header-top ul{
-        @apply text-[17px] text-[#5E636E] flex space-x-4
+        @apply text-[16px] text-[#7c8391] font-[300] flex space-x-4
     }
     .header-top ul li{
         @apply flex items-center 
     }
     .main__nav ul{
-        @apply flex space-x-8 text-[17px]  text-[#17191C] font-[400]
+        @apply flex space-x-8 text-[17px]  text-[#000000] font-[400] 
+    }
+    .main__nav ul li{
+        @apply hover:text-primary duration-500
     }
     .register__btn{
-        @apply h-[44px] w-[86px] border border-[#D9D9D9] rounded-sm text-[14px]
+        @apply h-[44px] w-[86px] border border-[#D9D9D9] hover:bg-[#D9D9D9] duration-500 rounded-sm text-[14px]
     }
     .login__btn{
-        @apply h-[44px] w-[69px] bg-primary rounded-sm text-[14px] text-[white]
+        @apply h-[44px] w-[69px] bg-primary hover:bg-[#FF9347] duration-500 rounded-sm text-[14px] text-[white]
     }
     .hero-heading{
         @apply leading-[65px] text-[55px] font-[900]
@@ -57,10 +63,10 @@
         @apply text-[#056e08] mr-2
     }
     .view-plans-btn{
-        @apply bg-[black] bg-opacity-75 h-[53px] w-[236px] rounded-sm text-[18px] text-[white]
+        @apply bg-[black] bg-opacity-75  hover:bg-opacity-100 duration-500 h-[53px] w-[236px] rounded-sm text-[18px] text-[white]
     }
     .others-plans-btn{
-        @apply h-[53px] w-[168px] border border-[black] border-opacity-75 rounded-sm text-[18px] text-[black]
+        @apply h-[53px] w-[168px] border border-[black] border-opacity-75 rounded-sm text-[18px] text-[black] hover:bg-[black] hover:text-[white] duration-500
     }
     .price-box{
         @apply bg-[white] shadow-2xl rounded-md shadow-primary
@@ -71,8 +77,9 @@
     .pricelist-icon{
         @apply mr-2 text-[#00DC09]
     }
+
     .order-btn{
-        @apply w-full py-3 rounded-sm text-[24px] text-[white] bg-gradient-to-r from-[#f97316] to-[#facc15]
+        @apply w-full py-3 rounded-sm text-[24px] text-[white] bg-gradient-to-r from-[#f97316] to-[#facc15] hover:bg-[#f97316]
     }
     .gurantee-btn{
         @apply py-3 px-6 rounded-sm text-[24px] text-[white] bg-gradient-to-r from-[#f97316] to-[#facc15] shadow-lg
@@ -135,14 +142,15 @@
         @apply h-[53px] w-[168px] border border-[black] border-opacity-75 rounded-sm text-[18px] text-[black] flex justify-center items-center
     }
     .hosting-feature-box{
-        @apply bg-[white] p-6 rounded-md shadow-xl
+        @apply bg-[white] p-6 rounded-md shadow-xl hover:bg-[black] hover:duration-500 hover:text-[white]
     }
     .hosting-feature-box h3{
         @apply text-[24px] font-[700] mb-3
     }
     .hosting-feature-box p{
-        @apply text-paragraph
+        @apply text-paragraph 
     }
+
     .migration-list ul li{
         @apply flex items-baseline
     }
@@ -166,6 +174,24 @@
     }
     .domain-box-icon{
         @apply w-[65px] mb-3
+    }
+    .extenton-name{
+        @apply flex space-x-6 justify-center mt-6
+    }
+    .extenton-name p{
+        @apply text-[black]
+    }
+    .extenton-name button{
+        @apply flex items-center
+    }
+    .Hosting-feature-img{
+        @apply max-w-[75px] mb-4
+    }
+    .gurantee-popup{
+        @apply bg-[white] max-w-[600px] max-h-[600px]  p-6 shadow-lg rounded-md absolute translate-x-[50%]   top-[150px] space-y-3
+    }
+    .gurantee-popup h2{
+        @apply text-[24px]
     }
 }
 

@@ -17,6 +17,7 @@ export default function Hosting() {
         <Cpanel/>
         <MoneyReturn/>
         <Migrate/>
+        
     </div>
   )
 }
